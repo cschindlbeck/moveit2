@@ -9,7 +9,8 @@ ament_target_dependencies(moveit_planning_scene_interface moveit_msgs
 # add_library(moveit_planning_scene_interface_python
 # src/wrap_python_planning_scene_interface.cpp)
 # set_target_properties(moveit_planning_scene_interface_python PROPERTIES
-# VERSION "${${PROJECT_NAME}_VERSION}")
+# VERSION
+# "${${PROJECT_NAME}_VERSION}")
 # target_link_libraries(moveit_planning_scene_interface_python
 # moveit_planning_scene_interface ${PYTHON_LIBRARIES} ${LIBS} ${Boost_LIBRARIES}
 # moveit_py_bindings_tools)
