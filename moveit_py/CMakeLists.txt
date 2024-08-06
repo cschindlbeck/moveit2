@@ -24,8 +24,16 @@ function(configure_build_install_location library_name)
   # Install into test_moveit folder in build space for unit tests to import
   set_target_properties(
     ${library_name}
-    PROPERTIES # Use generator expression to avoid prepending a build type
-               # specific directory on Windows
+    PROPERTIES # Use
+               # generator
+               # expression
+               # to avoid
+               # prepending
+               # a build
+               # type
+               # specific
+               # directory
+               # on Windows
                LIBRARY_OUTPUT_DIRECTORY
                $<1:${CMAKE_CURRENT_BINARY_DIR}/test_moveit>
                RUNTIME_OUTPUT_DIRECTORY

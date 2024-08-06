@@ -46,6 +46,7 @@ repos:
         language: system
         files: \.(c|cc|cxx|cpp|frag|glsl|h|hpp|hxx|ih|ispc|ipp|java|js|m|proto|vert)$
         args: ['-fallback-style=none', '-i']
+
   - repo: https://github.com/codespell-project/codespell
     rev: v2.3.0
     hooks:
@@ -57,7 +58,10 @@ repos:
     rev: v0.6.13
     hooks:
       - id: cmake-format
+        # args:
+        #   - "--config-files=.cmake-format.py"  # Use custom config
       - id: cmake-lint
-        args:
-          - "--disabled-codes=C0301" # Disable Line too long lint
-          - "--suppress-decorations"
+      #   args:
+      #     - "--disabled-codes=C0301" # Disable Line too long lint
+      #     - "--suppress-decorations"
+      #     - "--dump-config=.cmake-format.py"  # Use custom config
