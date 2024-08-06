@@ -58,9 +58,9 @@ repos:
     rev: v0.6.13
     hooks:
       - id: cmake-format
-        # args:
-        #   - "--config-files=.cmake-format.py"  # Use custom config
-      - id: cmake-lint
+        files: \.(CMakeLists.txt)$
+        args: ["--line-width", "10"]  # Use custom config
+      # - id: cmake-lint
       #   args:
       #     - "--disabled-codes=C0301" # Disable Line too long lint
       #     - "--suppress-decorations"
