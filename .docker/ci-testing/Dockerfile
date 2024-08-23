@@ -31,7 +31,7 @@ RUN \
         # Preferred build tools
         clang clang-format-14 clang-tidy clang-tools \
         ccache \
-        ros-"$ROS_DISTRO"-ros-base && \
+        "ros-${ROS_DISTRO}-ros-base" && \
     #
     # Clear apt-cache to reduce image size
     rm -rf /var/lib/apt/lists/*
